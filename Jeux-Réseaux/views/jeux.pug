@@ -1,0 +1,69 @@
+doctype html
+html(lang='fr')
+  head
+    meta(charset='UTF-8')
+    title Jeux-Reseaux/Nicolas-BABACI
+    link(rel='icon', href='/jeux/images/deco/favicon.ico')
+    link(rel='stylesheet' href='/jeux/css/style-index.css' type='text/css' media='screen')
+    link(rel='stylesheet' href='/jeux_cv/css/style-nav.css' type='text/css' media='screen')
+  body#body  
+    canvas#brume(height='670' width='1920')
+    nav#menu
+      ul#nav
+        li
+          a(href='/' title='accueil') Accueil
+        li#selected
+          a(href='/jeux' title='retour_au_jeux') Jeux
+        li
+          a(href='/jeux-cv' title='jeux_cv') Jeux CV
+        li
+          a(href='/cv' title='cv' target='_blank') CV
+        li
+          a(href='/jeux/cv/CV_BABACI_Nicolas.pdf' download='CV_Nicolas_BABACI.pdf' title='download_cv_en_PDF')
+            | T&eacute;l&eacute;charger
+            | le CV
+        li
+          a(href='#' onclick="parent.location='mailto:nicolas.babaci@gmail.com?'" title='envoyez_moi_un_mail')
+            | Envoyez-moi
+            | un Mail
+    br
+    br
+    br
+    h1#monTitre Projet BACK-END !!!
+    #mission
+      p#p1 Capturez le drapeau en ramassant le plus de pi&egrave;ces au passage !!!
+      p.p2
+        | Pour se d&eacute;placer,
+        br
+        | utiliser les touches directionnelles
+      p#p3
+        | * Si vous rencontrez des probl&egrave;mes d&apos;affichage, pensez &agrave; vider le &quot;cache&quot; de votre navigateur Web.
+    form#formulaire(action='/jeux-reseaux' method='get' name='formu')
+      label Veuillez saisir votre Pseudo:
+      hr
+      input#saisi(type='text' autocomplete='on' placeholder='en minuscules svp' required='' name='pseudo')
+      hr
+      input(type='submit' value='Valider' title='C\'est parti !')
+      p#p4 
+        | * Pour vous inscrire, 
+        a(href='/inscription' title='formulaire_inscription')
+          | cliquez ici. 
+        #inconnu 
+          p(style='color:brown; text-decoration:underline; text-transform:uppercase;')
+          strong=message
+    #panneauDesUsers
+      img(src='/jeux/images/deco/bouton_users.png', alt='bouton_vers_liste_des_joueurs')
+      #listeUsers
+        p#topUser
+          a#liens(href='/liste-users' title='Liste des utilisateurs')
+            strong Liste des joueurs    
+            
+    // Script + jQuery
+    script(src='/jeux/src/jquery-3.3.1.min.js')
+    script(src='/jeux/src/jquery-ui.js')
+    script(src='/jeux/src/jquery.spasticNav.js')
+    script(src='/socket.io/socket.io.js')
+
+    // Script barre de navigation
+    script.
+      $("#nav").spasticNav();

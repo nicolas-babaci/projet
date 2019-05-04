@@ -1,0 +1,115 @@
+doctype html
+html(lang='fr')
+  head
+    meta(charset='UTF-8')
+    title Projet Back-End/Nicolas-BABACI
+    link(rel='icon', href='/jeux/images/deco/favicon.ico')
+    link(rel='stylesheet', href='/jeux/css/style-jeux.css', type='text/css', media='screen')
+    link(rel='stylesheet', href='/jeux_cv/css/style-nav.css', type='text/css', media='screen')
+  body#body
+    div
+      img#game_over(src='/jeux/images/deco/game_over.png', alt='game_over')
+      #containerPieces0
+        img#pieces0(src='/jeux/images/coin.png', alt='piece')
+        img#point0(src='/jeux/images/deco/score.png', alt='score')
+      #containerPieces1
+        img#pieces1(src='/jeux/images/coin1.png', alt='piece')
+        img#point1(src='/jeux/images/deco/score1.png', alt='score')
+      #containerPieces2
+        img#pieces2(src='/jeux/images/coin1.png', alt='piece')
+        img#point2(src='/jeux/images/deco/score1.png', alt='score')
+      #containerPieces3
+        img#pieces3(src='/jeux/images/coin.png', alt='piece')
+        img#point3(src='/jeux/images/deco/score.png', alt='score')
+      #containerPieces4
+        img#pieces4(src='/jeux/images/coin1.png', alt='piece')
+        img#point4(src='/jeux/images/deco/score1.png', alt='score')
+      #containerPieces5
+        img#pieces5(src='/jeux/images/coin.png', alt='piece')
+        img#point5(src='/jeux/images/deco/score.png', alt='score')
+      #containerPieces6
+        img#pieces6(src='/jeux/images/coin.png', alt='piece')
+        img#point6(src='/jeux/images/deco/score.png', alt='score')
+      #containerPieces7
+        img#pieces7(src='/jeux/images/coin.png', alt='piece')
+        img#point7(src='/jeux/images/deco/score.png', alt='score')
+      #containerPieces8
+        img#pieces8(src='/jeux/images/coin1.png', alt='piece')
+        img#point8(src='/jeux/images/deco/score1.png', alt='score')
+      #containerPieces9
+        img#pieces9(src='/jeux/images/coin.png', alt='piece')
+        img#point9(src='/jeux/images/deco/score.png', alt='score')
+      #containerPieces10
+        img#pieces10(src='/jeux/images/coin1.png', alt='piece')
+        img#point10(src='/jeux/images/deco/score1.png', alt='score')
+      #containerPieces11
+        img#pieces11(src='/jeux/images/coin.png', alt='piece')
+        img#point11(src='/jeux/images/deco/score.png', alt='score')
+      #containerPieces12
+        img#pieces12(src='/jeux/images/coin.png', alt='piece')
+        img#point12(src='/jeux/images/deco/score.png', alt='score')
+      #containerPieces13
+        img#pieces13(src='/jeux/images/coin1.png', alt='piece')
+        img#point13(src='/jeux/images/deco/score1.png', alt='score')
+      #containerPieces14
+        img#pieces14(src='/jeux/images/coin.png', alt='piece')
+        img#point14(src='/jeux/images/deco/score.png', alt='score')
+      #containerPieces15
+        img#pieces15(src='/jeux/images/coin1.png', alt='piece')
+        img#point15(src='/jeux/images/deco/score1.png', alt='score')
+    #containerDrapeau
+      img#drapeau(src='/jeux/images/flag_jaune.png', alt='drapeau')
+    #containerPersonnageBleu
+      img#personnageBleu(src='/jeux/images/boby.png', alt='personnage')
+    #containerTank
+      img#tank(src='/jeux/images/deco/tank.png', alt='tank')
+    #containerPluie
+      img#pluie(src='/jeux/images/rain.png', alt='pluie')
+    #containerNuages
+      img#nuages(src='/jeux/images/nuages.png', alt='nuages')
+    #containerSoleil
+      img#soleil(src='/jeux/images/deco/sun.png', alt='soleil')
+
+    nav#menu
+      ul#nav
+        li
+            a(href='/' title='Accueil') Accueil
+        li#selected
+            a(href='/jeux' title='retour_au_jeux') Jeux
+        li
+            a(href='/jeux-cv' title='jeux_cv') Jeux CV
+        li
+            a(href='/cv' title='cv' target='_blank') CV
+        li
+            a(href='/jeux/cv/CV_BABACI_Nicolas.pdf' download='CV_Nicolas_BABACI.pdf' title='download_cv_en_PDF') T&eacute;l&eacute;charger le CV
+        li
+            a(href='#' onclick="parent.location='mailto:nicolas.babaci@gmail.com?'" title='envoyez_moi_un_mail') Envoyez-moi un Mail
+            
+    #panneaux
+      img#panneau(src='/jeux/images/deco/panneau.png', alt='panneau')
+      p#pseudo #{pseudo}
+      p#score #{score}  
+      form#formulaire_score(action='/score' method='get' name='score')
+        input#reset(type="submit" value="Quitter")
+      img#picto(src='/jeux/images/deco/pictoMineur.png', alt='picto')
+    #panneauDesScores
+      img(src='/jeux/images/deco/panneau_top.png', alt='panneau')
+      #topScores
+        p
+          strong - SCORE -
+        hr
+        p #{pseudo}:  
+        p#topScore0 #{score}
+        p Pts
+        hr
+
+    // Script + jQuery
+    script(src='/jeux/src/jquery-3.3.1.min.js')
+    script(src='/jeux/src/jquery-ui.js')
+    script(src='/jeux/src/jquery.spasticNav.js')
+    script(src='/socket.io/socket.io.js')
+    script(src='/jeux/js/projet.js')
+
+    // Script barre de navigation
+    script.
+      $("#nav").spasticNav();

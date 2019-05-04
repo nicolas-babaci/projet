@@ -1,0 +1,185 @@
+
+#body {
+    background: url(/jeux/images/wallpaper-cv.jpg);
+    background-repeat: no-repeat;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 100%;
+    margin: 0px;
+    width: 100%;
+}
+
+#menu {
+    left: 52%;
+    margin-top: 20px;
+    position: relative;
+    transform: translate(-50%);
+}
+
+#brume {
+    background: palegoldenrod;
+    filter: blur(40px);
+    margin-top: 230px;
+    position: absolute;
+}
+
+#formulaire {
+    background-color: silver;
+    border: 3px solid grey;
+    border-radius: 50px;
+    border-style: outset;
+    font-size: 18px;
+    height: 190px;
+    left: 50%;
+    margin-top: 100px;
+    padding: 10px 40px 20px 40px;
+    position: absolute;
+    text-align: center;
+    top: 400px;
+    transform: translate(-50%);
+    width: 200px;
+}
+
+#saisi {
+    font-size: 14px;
+}
+
+input + span {
+    padding-right: 10px;
+}
+
+input:invalid + span:after {
+    content: '✖';
+    padding-left: 10px;
+    position: absolute;
+}
+
+input:valid + span:after {
+    content: '✓';
+    padding-left: 10px;
+    position: absolute;
+}
+
+input:hover {
+    color: tomato;
+}
+
+#monTitre {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 50px black;
+    color: brown;
+    font-size: 70px;
+    padding: 25px 0px;;
+    position: relative;
+    margin-top: 50px;
+    text-align: center;
+    text-shadow: 1px 3px 5px black;
+    width: 100%;
+}
+
+#mission {
+    font-weight: bold;
+    left: 50%;
+    position: relative;
+    top: 45px;
+    transform: translate(-50%);
+}
+
+#p1 {
+    font-size: 24px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.p2 {
+    text-align: center;
+}
+
+#p3 {
+    margin-top: 445px;
+    text-align: center;
+}
+
+#p4 {
+    font-size: 14px;
+}
+
+#p4 a:hover {
+    color: tomato;
+}
+
+#saisi {
+    text-align: center;
+}
+
+#panneauDesUsers {
+    left: 50%;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 260px;
+    transform: translate(-50%);
+}
+
+#topUser {
+    color: palegoldenrod;
+    font-size: 16px;
+    font-weight: bold;
+    left: 22px;
+    margin: 0px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 10px;
+}
+
+#liens:hover {
+    color: tomato;
+}
+
+#liens {
+    color: palegoldenrod;
+    text-decoration: none;
+}
+
+#panneauDesScores {
+    left: 80%;
+    position: absolute;
+    top: 240px;
+}
+
+#top {
+    color: palegoldenrod;
+    font-size: 16px;
+    left: 36px;
+    margin: 0px;
+    padding-bottom: 8px;
+    position: absolute;
+    top: 213px;
+}
+
+#topScores {
+    font-size: 12px;
+    font-weight: bold;
+    left: 7%;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 95px;
+    width: 160px;
+}
+
+#pluie {
+    display: none;
+}
+
+#nuages {
+    display: none;
+}
+
+#tank {
+    display: none;
+}
+
+#inconnu {
+    color: brown;
+}

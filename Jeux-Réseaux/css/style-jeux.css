@@ -1,0 +1,168 @@
+
+#body {
+    background: url(/jeux/images/221.jpg);
+    background-repeat: no-repeat;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 100%;
+    left: 0px;
+    margin: 0px;
+    visibility: hidden;
+    width: 100%;
+}
+
+#menu {
+    left: 52%;
+    margin-top: 20px;
+    position: fixed;
+    transform: translate(-50%);
+}
+
+body::-webkit-scrollbar {
+    height: 0px;
+    width: 0px;
+}
+
+#panneaux {
+    display: none;
+    left: 50%;
+    margin-top: 390px;
+    position: fixed;
+    transform: translate(-50%);
+    width: 160px;
+}
+
+#panneauDesScores {
+    left: 80%;
+    position: absolute;
+    top: 240px;
+}
+
+#panneau {
+    display: none;
+    left: 50%;
+    margin-top: 250%;
+    position: fixed;
+    transform: translate(-50%);
+}
+
+#pseudo {
+    background-color: goldenrod;
+    border: 2px inset;
+    height: 20px;
+    margin-top: 259%;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+}
+#picto {
+    height: 50px;
+    left: 980px;
+    position: absolute;
+    top: 480px;
+    width: 50px;
+}
+
+#score {
+    background-color: goldenrod;
+    border: 2px inset;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 16px;
+    height: 20px;
+    margin-top: -10px;
+    position: relative;
+    text-align: center;
+    width: 86px;
+}
+
+#formulaire_score {
+    left: 90px;
+    position: relative;
+    top: -40px;
+}
+
+#reset {
+    animation: Test 1s initial;
+    background-color: darkgoldenrod;
+    border: 2px inset;
+    font-weight: bold;
+    height: 24px;
+    position: relative;
+    width: 70px;
+}
+
+@keyframes Test{
+    0%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+#topScores {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: -255px;
+    margin-left: 7%;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    width: 160px;
+}
+
+#pluie {
+    display: none;
+}
+
+#nuages {
+    display: none;
+}
+
+#tank {
+    display: none;
+}
+
+#containerPieces0,
+#containerPieces1,
+#containerPieces2,
+#containerPieces3,
+#containerPieces4,
+#containerPieces5,
+#containerPieces6,
+#containerPieces7,
+#containerPieces8,
+#containerPieces9,
+#containerPieces10,
+#containerPieces11,
+#containerPieces12,
+#containerPieces13,
+#containerPieces14,
+#containerPieces15 {
+    display: none;
+}
+
+#point0,
+#point1,
+#point2,
+#point3,
+#point4,
+#point5,
+#point6,
+#point7,
+#point8,
+#point9,
+#point10,
+#point11,
+#point12,
+#point13,
+#point14,
+#point15 {
+    display: none;
+    position: absolute;
+}
+
+#game_over {
+    display: none;
+    left: 50%;
+    position: fixed;
+    top: 25%;
+    transform: translate(-50%);
+}
