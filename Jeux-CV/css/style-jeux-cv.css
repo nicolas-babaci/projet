@@ -1,0 +1,177 @@
+
+#body1 {
+    background: url(/jeux_cv/images/wallpaper-index.jpg);
+    background-repeat: no-repeat;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 100%;
+    margin: 0px;
+    visibility: hidden;
+    width: 100%;
+}
+
+#menu1 {
+    left: 52%;
+    margin-top: -90px;
+    position: absolute;
+    transform: translate(-50%);
+}
+
+#picto {
+    display: none;
+    height: 50px;
+    left: 1850px;
+    position: absolute;
+    top: 50px;
+    width: 50px;
+}
+
+#explosion1 {
+    display: none;
+    overflow: hidden;
+    position: absolute;
+}
+
+#container8 {
+    position: absolute;
+}
+
+#pierreD {
+    margin-left: 987px;
+    margin-top: 450px;
+    position: absolute;
+}
+
+#pierreG {
+    margin-left: 703px;
+    margin-top: 450px;
+    position: absolute;
+}
+
+#brume {
+    background: lightskyblue;
+    filter: blur(40px);
+    position: absolute;
+    top: 270px;
+}
+
+#formu {
+    margin-top: 110px;
+    position: relative;
+}
+
+#monTitre {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 50px black;
+    color: brown;
+    font-size: 70px;
+    margin-top: 50px;
+    padding: 25px 0px;
+    text-align: center;
+    text-shadow: 1px 3px 5px black;
+    width: 100%;
+}
+
+#mission {
+    font-weight: bold;
+    left: 50%;
+    position: absolute;
+    top: 200px;
+    transform: translate(-50%);
+}
+
+#heure {
+    background-color: #99b717;
+    border: 5px solid tomato;
+    border-style: inset;
+    display: none;
+    font-size: 34px;
+    text-align: center;
+}
+
+#btStart {
+    background: green;
+    border-radius: 50px;
+    color: white;
+    font: bold 20px Arial;
+    left: 50%;
+    padding: 10px;
+    position: absolute;
+    top: 460px;
+    transform: translate(-50%);
+}
+
+#btStart:hover {
+    color: orange;
+}
+
+#btReprise {
+    background: green;
+    border-radius: 50px;
+    color: white;
+    display: none;
+    font: bold 13px Arial;
+    margin-top: 5px;
+    padding: 6px;
+}
+
+#btStop {
+    background: red;
+    border-radius: 50px;
+    color: white;
+    display: none;
+    font: bold 13px Arial;
+    margin-top: 5px;
+    padding: 6px;
+}
+
+#btReset {
+    background: royalblue;
+    border-radius: 50px;
+    color: white;
+    display: none;
+    font: bold 13px Arial;
+    margin-top: -10px;
+    padding: 6px;
+    position: relative;
+}
+
+#btReset:hover {
+    color: orange;
+}
+
+#photo {
+    display: none;
+    margin-top: -138px;
+    position: relative;
+    text-align: center;
+}
+
+#photo1 {
+    display: none;
+    margin-top: -138px;
+    position: relative;
+    text-align: center;
+}
+
+#p1 {
+    font-size: 24px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.p2 {
+    text-align: center;
+}
+
+#p3 {
+    font-weight: bold;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 760px;
+    transform: translate(-50%);
+}
+
+#container3, #container5, #container4, #container6, #container7 {
+    display: none;
+}

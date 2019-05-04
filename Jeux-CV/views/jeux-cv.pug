@@ -1,0 +1,102 @@
+doctype html
+html(lang='fr')
+  head
+    meta(charset='UTF-8')
+    title Jeux-CV/Nicolas-BABACI
+    link(rel='icon', href='/jeux_cv/images/deco/favicon.ico')
+    link(rel='stylesheet', href='/jeux_cv/css/style-jeux-cv.css', type='text/css', media='screen')
+    link(rel='stylesheet', href='/jeux_cv/css/style-nav.css', type='text/css', media='screen')
+  body#body1
+
+    // ******* Sprite + images ******
+    #container1
+      img#chutteDEau1(src='/jeux_cv/images/waterFalls.png', alt="une_chutte_d'eau")
+    #container2
+      img#chutteDEau2(src='/jeux_cv/images/waterFalls.png', alt="une_chutte_d'eau")
+    #container4
+      img#bouletCanon(src='/jeux_cv/images/bouletCanon.png', alt='un_boulet_de_canon')
+    #container3
+      img#canon(src='/jeux_cv/images/cannon1.png', alt='un_canon')
+    #container
+      img#perso(src='/jeux_cv/images/zou.png', alt='le_personnage')
+    #container5
+      img#explosion(src='/jeux_cv/images/explosion.png', alt='explosion')
+    #container8
+      img#explosion1(src='/jeux_cv/images/explosion1.png', alt='explosion')
+    div
+      img#pierreD(src='/jeux_cv/images/deco/pierreD.png', alt='un_rocher')
+    div
+      img#pierreG(src='/jeux_cv/images/deco/pierreG.png', alt='un_rocher')
+    #container7
+      img#nuages2(src='/jeux_cv/images/nuage2.png', alt='un_nuage')
+    #container6
+      img#nuages(src='/jeux_cv/images/nuage.png', alt='un_nuage')
+    // ******* Fin sprite + images ******
+
+    canvas#brume(height='660', width='1920')
+    form#formu(method='post', name='formu')
+
+      // ******* Barre de navigation ******
+      nav#menu1
+        ul#nav
+          li
+            a(href='/', title='accueil') Accueil
+          li
+            a(href='jeux', title='jeux') Jeux
+          li#selected
+            a(href='jeux-cv', title='retour_au_jeux') Jeux CV
+          li
+            a(href='cv', title='cv', target='_blank') CV
+          li
+            a(href='/jeux_cv/cv/CV_BABACI_Nicolas.pdf', download='CV_Nicolas_BABACI.pdf', title='download_cv_en_PDF') Télécharger le CV
+          li
+            a(href='#', onclick="parent.location='mailto:nicolas.babaci@gmail.com?'", title='envoyez_moi_un_mail') Envoyez-moi un Mail
+      // ******* Fin barre de navigation ******
+
+      // ******* Titre + texte d'introduction ******
+      h1#monTitre Apportez le CV aux recruteurs !!!
+      #mission
+        p#p1
+          | Apportez le CV le plus rapidement possible aux recruteurs en évitant les pièges !!!
+        p.p2
+          | Pour se déplacer,
+          br
+          | utiliser les touches directionnelles ou
+          br
+          br
+          img(src='/jeux_cv/images/deco/ZQSD.png', alt='touche_clavier')
+      // ******* Fin texte d'introduction ******
+
+      // ******* Affichage Chrono ******
+      p.p2
+        input#heure(name='heure', type='text', value='00:00:00')
+
+      // ******* Bouton ******
+      p.p2
+        button#btStart(type='button', name='Submit', title='C\'est parti !', value=' START ', onclick='chronos();') START
+        // Ce bouton est caché
+        input#btReprise(type='button', name='Submit4', title='C\'est re-parti !', value=' Reprise ', onclick='chronos();')
+        // Ce bouton est caché
+        input#btStop(type='button', name='Submit2', value='  Stop  ', onclick='window.clearTimeout(chrono);')
+        input#btReset(type='button', name='Submit3', title='Tu abandonnes :(', value='  Recommencer  ', onclick="{m=0;s=0;ms=0; window.status = '00:00:00' ; document.formu.heure.value ='00:00:00'; window.location.reload()}")
+        img#picto(src='/jeux/images/deco/pictoMineur.png')
+      // ******* Fin bouton ******
+
+      p#p3
+        | * Si vous rencontrez des problèmes d'affichage, pensez à vider le "cache" de votre navigateur Web.     
+
+    // ******* Affichage des images gagné ou perdu ******
+    p#photo
+      img(src='/jeux_cv/images/deco/accepted.png', alt='poster')
+    p#photo1
+      img(src='/jeux_cv/images/deco/rejected.png', alt='poster')
+
+    // Script + jQuery
+    script(src='/jeux_cv/src/jquery-3.3.1.min.js')
+    script(src='/jeux_cv/src/jquery-ui.js')
+    script(src='/jeux_cv/src/jquery.spasticNav.js')
+    script(src='/jeux_cv/js/projet.js')
+    
+    // Script barre de navigation
+    script.
+      $("#nav").spasticNav();
