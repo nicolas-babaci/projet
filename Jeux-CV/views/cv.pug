@@ -1,0 +1,42 @@
+doctype html
+html(lang='fr')
+  head
+    meta(charset='UTF-8')
+    title CV/Nicolas-BABACI
+    link(rel='icon', href='jeux/images/deco/favicon.ico')
+    link(rel='stylesheet', href='jeux/css/style-cv.css', type='text/css', media='screen')
+    link(rel='stylesheet', href='jeux/css/style-nav.css', type='text/css', media='screen')
+  body#body
+    #cv
+      img(src='jeux_cv/cv/CV_BABACI_Nicolas.jpg', alt='cv')
+
+    // Badge LinkedIn  
+    .LI-profile-badge(data-version='v1', data-size='medium', data-locale='fr_FR', data-type='horizontal', data-theme='dark', data-vanity='nicolas-babaci')
+      a.LI-simple-link(href='https://fr.linkedin.com/in/nicolas-babaci?trk=profile-badge')
+
+    nav#menu
+      ul#nav
+        li
+          a(href='/', title='accueil') Accueil
+        li
+          a(href='jeux', title='jeux') Jeux
+        li
+          a(href='jeux-cv', title='jeux_cv') Jeux CV
+        li#selected
+          a(href='cv', title='cv') CV
+        li
+          a(href='jeux_cv/cv/CV_BABACI_Nicolas.pdf', download='CV_Nicolas_BABACI.pdf', title='download_cv_en_PDF') Télécharger le CV
+        li
+          a(href='#', onclick="parent.location='mailto:nicolas.babaci@gmail.com?'", title='envoyez_moi_un_mail') Envoyez-moi un Mail
+
+    // Script + jQuery
+    script(src='jeux_cv/src/jquery-3.3.1.min.js')
+    script(src='jeux_cv/src/jquery-ui.js')
+    script(src='jeux_cv/src/jquery.spasticNav.js')
+
+    // Script barre de navigation
+    script.
+      $("#nav").spasticNav();
+
+    // Script badge LinkedIn  
+    script(type='text/javascript', src='https://platform.linkedin.com/badges/js/profile.js', async='', defer='')
